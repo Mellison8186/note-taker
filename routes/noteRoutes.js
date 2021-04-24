@@ -21,7 +21,7 @@ router.get('/notes', (req, res) => {
   });
 
   router.delete('/api/notes/:id', (req, res) => {
-    (req.params.id);
+    res.send(req.params.id);
   });
 
   router.get('*', (req, res) => {
