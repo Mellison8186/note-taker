@@ -7,7 +7,7 @@ const notes = require('../db/db.json');
 const { uuid } = require('uuidv4');
 
 router.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/notes.html'));
+    res.sendFile(path.join(__dirname, '../public/notes.html'), JSON.stringify(notes));
   });
 
   router.get('/api/notes', (req, res) => {
